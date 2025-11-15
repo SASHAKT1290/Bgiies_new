@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { Lexend } from 'next/font/google';
-import GalleryCarousel from '../../components/GalleryCarousel';
 const lexend = Lexend({ subsets: ['latin'] });
 
 const page = () => {
@@ -28,7 +27,7 @@ const page = () => {
                     />
 
                     {/* Text */}
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl w-full sm:w-4/F5 md:w-3/4 lg:w-2/3 text-center font-bold text-white">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl w-full sm:w-4/5 md:w-3/4 lg:w-2/3 text-center font-bold text-white">
                         <span className="border-b-4 border-lime-400 pb-1">Bui</span>
                         lding the next generation of startups
                     </h1>
@@ -40,10 +39,7 @@ const page = () => {
                 </div>
             </div>
             
-            {/*GALLERY*/}
-            <div className="bg-white py-24">
-                <GalleryCarousel />
-            </div>
+
         </>
     )
 }
